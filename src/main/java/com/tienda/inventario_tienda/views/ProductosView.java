@@ -146,7 +146,6 @@ public class ProductosView extends HorizontalLayout {
         NumberField precioField = new NumberField("Precio Unitario");
         NumberField cantidadField = new NumberField("Cantidad en Stock");
 
-        // Estilizar campos para que combinen con el fondo oscuro
         formatField(nombreField);
         formatField(precioField);
         formatField(cantidadField);
@@ -175,8 +174,7 @@ public class ProductosView extends HorizontalLayout {
         formCard.add(nombreField, precioField, cantidadField, btnGuardar);
         contentArea.add(titulo, formCard);
     }
-
-    // Método auxiliar para dar estilo oscuro a los inputs de texto/número
+    //estilos del formulario
     private void formatField(com.vaadin.flow.component.AbstractField<?, ?> field) {
         field.getElement().getStyle().set("width", "100%");
         field.getStyle().set("--vaise-input-background", "rgba(255,255,255,0.03)");
