@@ -34,5 +34,7 @@ build/
 
 
 #archivo generado por vaadin
-/src/main/fronted/generated/
+src/main/frontend/generated/
 error-vaadin.txt
+
+
